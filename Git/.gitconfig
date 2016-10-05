@@ -1,0 +1,10 @@
+[user]
+	name = Manmeet Gill
+	email = contact@manmeetgill.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+[core]
+	autocrlf = true
+	editor = 'C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe'

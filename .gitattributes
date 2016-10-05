@@ -1,0 +1,13 @@
+### Sets default
+* text=auto
+
+### Sets text files
+## Git files
+.gitattributes text
+## Vim
+.vimrc text
+## Markdown
+*.md text
+## Installers
+*.bash text
+*.bat text
