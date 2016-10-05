@@ -1,12 +1,16 @@
 [submodule "Vim/vimfiles/bundle/vim-hybrid-material"]
 	path = Vim/vimfiles/bundle/vim-hybrid-material
 	url = https://github.com/kristijanhusak/vim-hybrid-material.git
+    ignore = all
 [submodule "Vim/vimfiles/bundle/vim-sensible"]
 	path = Vim/vimfiles/bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
+    ignore = all
 [submodule "Vim/vimfiles/bundle/YouCompleteMe"]
 	path = Vim/vimfiles/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+    ignore = all
 [submodule "Vim/vimfiles/bundle/vim-pathogen"]
 	path = Vim/vimfiles/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
+    ignore = all
