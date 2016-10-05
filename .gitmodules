@@ -1,5 +1,5 @@
 [submodule "Vim/vimfiles/plugins/Vundle.vim"]
-	path = Vim/vimfiles/plugins/Vundle.vim
+	path = Vim/vimfiles/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
 [submodule "Vim/vimfiles/bundle/vim-hybrid-material"]
 	path = Vim/vimfiles/bundle/vim-hybrid-material
