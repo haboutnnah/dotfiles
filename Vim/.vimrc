@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
-execute pathogen#infect()
+source ~/vimfiles/bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect('~/vimfiles/bundle/{}')
 
 filetype plugin on " Tabs for makefiles, 2 spaces for YAML
 
@@ -21,3 +22,20 @@ set expandtab       " Expand TABs to spaces
 set guifont=Source_Code_Pro_Light:h11 " Set font for gvim
 set background=dark " Set background for gvim
 colorscheme hybrid_material " Set background to theme that was installed earlier
+
+" Work with conemu
+if !has("gui_running")
+    set term=xterm
+    set t_Co=256
+    let &t_AB="\e[48;5;%dm"
+    let &t_AF="\e[38;5;%dm"
+    set mouse=a
+    inoremap <Esc>[62~ <C-X><C-E>
+    inoremap <Esc>[63~ <C-X><C-Y>
+    nnoremap <Esc>[62~ <C-E>
+    nnoremap <Esc>[63~ <C-Y>
+    colorscheme hybrid_material
+endif
+
+inoremap <Char-0x07F> <BS>
+nnoremap <Char-0x07F> <BS>
