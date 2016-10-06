@@ -20,3 +20,21 @@
 [submodule "Vim/vimfiles/bundle/vim-airline-themes"]
 	path = Vim/vimfiles/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "Vim/vimfiles/bundle/vim-fugitive"]
+	path = Vim/vimfiles/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "Vim/vimfiles/bundle/vim-gitgutter"]
+	path = Vim/vimfiles/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "Vim/vimfiles/bundle/syntastic"]
+	path = Vim/vimfiles/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "Vim/vimfiles/bundle/pep8"]
+	path = Vim/vimfiles/bundle/pep8
+	url = https://github.com/cburroughs/pep8.git
+[submodule "Vim/vimfiles/bundle/nerdtree"]
+	path = Vim/vimfiles/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "Vim/vimfiles/bundle/nerdtree-git-plugin.git"]
+	path = Vim/vimfiles/bundle/nerdtree-git-plugin.git
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
