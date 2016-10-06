@@ -49,9 +49,12 @@ if !has("gui_running")
     colorscheme hybrid_material
 endif
 
-
-"DirectX if has("directx") && $VIM_USE_DIRECTX != '0'   set
-"renderoptions=type:directx,taamode:1 endif
+"DirectX
+if has("directx") && $VIM_USE_DIRECTX != '0'
+    set renderoptions=type:directx,taamode:1 endif
+endif
 
 inoremap <Char-0x07F> <BS>
 nnoremap <Char-0x07F> <BS>
+
+let g:airline_theme = "hybrid"
