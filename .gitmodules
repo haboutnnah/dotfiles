@@ -38,3 +38,9 @@
 [submodule "Vim/vimfiles/bundle/nerdtree-git-plugin.git"]
 	path = Vim/vimfiles/bundle/nerdtree-git-plugin.git
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "Vim/vimfiles/bundle/emmet-vim"]
+	path = Vim/vimfiles/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "Vim/vimfiles/bundle/vim-startify"]
+	path = Vim/vimfiles/bundle/vim-startify
+	url = https://github.com/mhinz/vim-startify.git
