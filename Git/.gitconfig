@@ -7,4 +7,4 @@
 	required = true
 [core]
 	autocrlf = true
-	editor = 'C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe'
+	editor = 'vim'

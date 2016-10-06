@@ -1,6 +1,18 @@
 set nocompatible              " be iMproved, required
-source ~/vimfiles/bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect('~/vimfiles/bundle/{}')
+if has("win32") || has("win64")
+  "Windows options here
+  source ~/vimfiles/bundle/vim-pathogen/autoload/pathogen.vim
+  execute pathogen#infect('~/vimfiles/bundle/{}')
+  else
+    if has("unix")
+        let s:uname = system("uname")
+            if s:uname == "Darwin\n"
+                source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+                execute pathogen#infect('~/.vim/bundle/{}')
+                    endif
+                      endif
+                      endif
+execute pathogen#infect($patholoadfolder + '{}')
 
 filetype plugin on " Tabs for makefiles, 2 spaces for YAML
 
