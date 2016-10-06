@@ -44,3 +44,6 @@
 [submodule "Vim/vimfiles/bundle/vim-startify"]
 	path = Vim/vimfiles/bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
+[submodule "Vim/vimfiles/bundle/vim-ps1"]
+	path = Vim/vimfiles/bundle/vim-ps1
+	url = https://github.com/PProvost/vim-ps1.git
