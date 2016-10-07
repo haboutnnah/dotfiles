@@ -1,20 +1,18 @@
 set nocompatible              " be iMproved, required
 if has("win32") || has("win64")
-  "Windows options here
-  source ~/vimfiles/bundle/vim-pathogen/autoload/pathogen.vim
-  execute pathogen#infect('~/vimfiles/bundle/{}')
-  else
-    if has("unix")
-        let s:uname = system("uname")
-            if s:uname == "Darwin\n"
-                source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
-                execute pathogen#infect('~/.vim/bundle/{}')
-                    endif
-                      endif
-                      endif
-execute pathogen#infect($patholoadfolder + '{}')
+	" Windows options here
+	source ~/vimfiles/bundle/vim-pathogen/autoload/pathogen.vim
+	execute pathogen#infect('~/vimfiles/bundle/{}')
+  	else
+    	if has("unix")
+    	" *nix options here
+        	source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+        	execute pathogen#infect('~/.vim/bundle/{}')
+        endif
+endif
 
-filetype plugin on " Tabs for makefiles, 2 spaces for YAML
+" Tabs for makefiles, 2 spaces for YAML
+filetype plugin on 
 
 " syntax highlighting
 syntax on
@@ -31,8 +29,11 @@ set softtabstop=4   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
 
+" Gvim
 set guifont=Source_Code_Pro_Light:h11 " Set font for gvim
-set background=dark " Set background for gvim
+
+" Pretty colour scheme
+set background=dark " Set background 
 colorscheme hybrid_material " Set background to theme that was installed earlier
 
 " Work with conemu
@@ -57,4 +58,11 @@ endif
 inoremap <Char-0x07F> <BS>
 nnoremap <Char-0x07F> <BS>
 
+" Vim Airline
 let g:airline_theme = "hybrid"
+let g:airline_powerline_fonts = 1
+let g:airline_enable_syntastic = 1
+
+set encoding=utf-8 " better than latin1
+setglobal fileencoding=utf-8
+set number
