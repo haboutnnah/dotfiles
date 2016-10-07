@@ -52,7 +52,7 @@ endif
 
 "DirectX
 if has("directx") && $VIM_USE_DIRECTX != '0'
-    set renderoptions=type:directx,taamode:1 endif
+    set renderoptions=type:directx,taamode:1
 endif
 
 inoremap <Char-0x07F> <BS>
