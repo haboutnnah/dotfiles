@@ -6,11 +6,9 @@ I upload them to GitHub so I can sync it to my actual dotfiles.
 
 # Installation
 
-Run Install.bash (Install.bat on Windows) as root (run as admin on Windows).  
-Make sure you are running it inside the folder that they are currently in.
+Look at the installation files, and try and modify them to your needs. At some point I'll make a script that *actually* works, but thats a while away.
 
-# Vim Plugins to Install
+**DO NOT RUN THE SCRIPTS BY THEMSELVES, THEY WON'T WORK.**
 
-These aren't included in the thing because they need to compile based on the current system architecture.
-
-1. YouCompleteMe
+(Note: If you're on Windows, replace each instance of $HOME with %USERPROFILE%)  
+If you don't like symlinks, just copy /Vim/.vimrc to $HOME/.vimrc, /Git/.gitconfig to $HOME/.vimrc, and /Vim/vimfiles to $HOME/.vim/ (%USERPROFILE%/vimfiles/ on Windows)
