@@ -1,15 +1,32 @@
 set nocompatible              " be iMproved, required
+
 if has("win32") || has("win64")
 	" Windows options here
-	source ~/vimfiles/bundle/vim-pathogen/autoload/pathogen.vim
-	execute pathogen#infect('~/vimfiles/bundle/{}')
+    call plug#begin('~/vimfiles/bundle')
   	else
     	if has("unix")
-    	" *nix options here
-        	source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
-        	execute pathogen#infect('~/.vim/bundle/{}')
-        endif
+            " *nix options here
+            call plug#begin('~/.vim/bundle')
+            endif
 endif
+
+Plug 'VundleVim/Vundle.vim'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'tpope/vim-sensible'
+Plug 'Valloric/YouCompleteMe'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/syntastic'
+Plug 'cburroughs/pep8'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'mattn/emmet-vim'
+Plug 'mhinz/vim-startify'
+Plug 'PProvost/vim-ps1'
+
+call plug#end()
 
 " Tabs for makefiles, 2 spaces for YAML
 filetype plugin on 
