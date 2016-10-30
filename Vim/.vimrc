@@ -47,7 +47,7 @@ set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
 " Gvim
-set guifont=Source_Code_Pro_Light:h11 " Set font for gvim
+set guifont=Source_Code_Pro_Light_for_Powerline:h11 " Set font for gvim
 
 " Pretty colour scheme
 set background=dark " Set background 
