@@ -89,4 +89,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(thefuck --alias fuck)"
 
 # Startup commands that have output
-neofetch
+neofetch --ascii
