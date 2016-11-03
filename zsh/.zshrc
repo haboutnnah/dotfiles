@@ -90,4 +90,4 @@ alias fuck='sudo $(fc -ln -1)'
 
 
 # Startup commands that have output
-screenfetch
+neofetch
