@@ -13,7 +13,6 @@ endif
 Plug 'VundleVim/Vundle.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'tpope/vim-sensible'
-Plug 'Valloric/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
