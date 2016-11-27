@@ -8,5 +8,17 @@ function Refresh-Path { $env:Path = [System.Environment]::GetEnvironmentVariable
 New-Alias activate ./VirtualEnv/Scripts/activate.ps1
 # Nice alias for Which (UNIX command) that tells you where a file in $PATH is located.
 function which([string]$cmd) {gcm -ErrorAction "SilentlyContinue" $cmd | ft Definition}function which([string]$cmd) {gcm -ErrorAction "SilentlyContinue" $cmd | ft Definition}
+# Alias for setting origins for a git repository
+function Setup-Git-Remotes {
+$githubname = "tf2manu994"
+$gitlabname = "tf2manu994"
+$atlassianname = "tf2manu994"
+$reponame = $args
+git remote rm origin
+git remote add origin git@${githubname}/${reponame}.git
+git remote set-url --add --push origin git@github:${githubname}/${reponame}.git
+git remote set-url --add --push origin git@gitlab:${gitlabname}/${reponame}.git
+git remote set-url --add --push origin git@bitbucket:${atlassianname}/${reponame}.git
+}
 # Sets prompt to be in Unicode. Allows Vim Powerline fancy symbols.
 chcp 65001
