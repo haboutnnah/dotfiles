@@ -1,6 +1,6 @@
 # Dotfiles
 
-This are [Manmeet Gill](https://manmeetgill.com)'s dotfiles.  
+This are [Hannah Ivy](https://hannahi.com)'s dotfiles.  
 I use symlinks to make these my actual ones.  
 I upload them to GitHub so I can sync it to my actual dotfiles.
 
