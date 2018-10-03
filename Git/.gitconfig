@@ -1,6 +1,6 @@
 [user]
-	name = Manmeet Gill
-	email = contact@manmeetgill.com
+	name = Hannah Ivy
+	email = contact@hannahi.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
