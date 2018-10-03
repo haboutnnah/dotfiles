@@ -2,12 +2,11 @@ set nocompatible              " be iMproved, required
 
 if has("win32") || has("win64")
 	" Windows options here
-    call plug#begin('~/vimfiles/bundle')
-  	else
-    	if has("unix")
-            " *nix options here
-            call plug#begin('~/.vim/bundle')
-            endif
+	call plug#begin('~/vimfiles/bundle')
+	else if has("unix")
+		" *nix options here
+		call plug#begin('~/.vim/bundle')
+	endif
 endif
 
 Plug 'VundleVim/Vundle.vim'
