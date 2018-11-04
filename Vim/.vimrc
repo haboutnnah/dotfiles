@@ -1,10 +1,23 @@
 set nocompatible              " be iMproved, required
 
+
 if has("win32") || has("win64")
 	" Windows options here
-	call plug#begin('~/vimfiles/bundle')
-	else if has("unix")
+	    if empty(glob('~/vimfiles/autoload/plug.vim'))
+            silent !curl -fLo ~/vimfiles/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+            autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+        endif
+
+        call plug#begin('~/vimfiles/bundle')
+else
+    if has("unix")
 		" *nix options here
+		if empty(glob('~/.vim/autoload/plug.vim'))
+            silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+            autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+        endif
 		call plug#begin('~/.vim/bundle')
 	endif
 endif
