@@ -36,6 +36,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-startify'
 Plug 'PProvost/vim-ps1'
+Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
