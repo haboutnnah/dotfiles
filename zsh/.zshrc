@@ -55,6 +55,7 @@ DEFAULT_USER="Manu"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(git)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh > /dev/null
 
@@ -90,7 +91,6 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(thefuck --alias fuck)"
 alias update="brew update && brew upgrade"
-alias netflix="pre_netflix_dir=$(pwd) &&  cd /Applications/discord-nflx/discord-netflix-master && npm start &! cd $pre_netflix_dir" 
 # add new dd
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 alias cat='bat'
