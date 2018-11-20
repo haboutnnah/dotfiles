@@ -22,7 +22,6 @@ else
 	endif
 endif
 
-Plug 'VundleVim/Vundle.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
@@ -37,6 +36,8 @@ Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-startify'
 Plug 'PProvost/vim-ps1'
 Plug 'zxqfl/tabnine-vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -59,11 +60,11 @@ set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
 " Gvim
-set guifont=Source_Code_Pro_Light:h11 " Set font for gvim
+set guifont="Fira Code":h11 " Set font for gvim
 
 " Pretty colour scheme
 set background=dark " Set background 
-colorscheme hybrid_material " Set background to theme that was installed earlier
+colorscheme onedark " Set background to theme that was installed earlier
 
 " Work with conemu
 if !has("gui_running")

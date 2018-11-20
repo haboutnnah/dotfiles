@@ -8,8 +8,26 @@ export ZSH=~/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
 ZSH_THEME="agnoster"
-DEFAULT_USER="Manu"
+if [ "$machine" = 'Linux' ];
+    then
+        DEFAULT_USER="Hannah";
+	    PATH="~/bin:$PATH"
+        alias update="sudo apt update && sudo apt upgrade"
+    else
+        PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+        DEFAULT_USER="Manu";
+        alias update="brew update && apt upgrade"
+fi
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,6 +74,7 @@ DEFAULT_USER="Manu"
 
 plugins=(git)
 plugins=(zsh-autosuggestions)
+plugins=(zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh > /dev/null
 
@@ -88,18 +107,16 @@ source $ZSH/oh-my-zsh.sh > /dev/null
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 fpath=(/usr/local/share/zsh-completions $fpath)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(thefuck --alias fuck)"
-alias update="brew update && brew upgrade"
 # add new dd
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 alias cat='bat'
 alias ping='prettyping --nolegend'
 alias top='sudo htop'
 alias diff='diff-so-fancy'
 alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
-
-
+alias vi='vim'
+alias nvim='vim'
+alias screenie="scrot '%Y-%m-%d_\$wx\$h_scrot.png' -e '~/bin/imgur \$f && mv \$f ~/images/shots/'"
 # Startup commands that have output
 neofetch --ascii
 
