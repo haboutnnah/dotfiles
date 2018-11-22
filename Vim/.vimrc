@@ -22,7 +22,7 @@ else
 	endif
 endif
 
-Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'rakr/vim-one'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -77,7 +77,6 @@ if !has("gui_running")
     inoremap <Esc>[63~ <C-X><C-Y>
     nnoremap <Esc>[62~ <C-E>
     nnoremap <Esc>[63~ <C-Y>
-    colorscheme hybrid_material
 endif
 
 "DirectX
@@ -89,7 +88,7 @@ inoremap <Char-0x07F> <BS>
 nnoremap <Char-0x07F> <BS>
 
 " Vim Airline
-let g:airline_theme = "hybrid"
+let g:airline_theme='one'
 let g:airline_powerline_fonts = 1
 let g:airline_enable_syntastic = 1
 
