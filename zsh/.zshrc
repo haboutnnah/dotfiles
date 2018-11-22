@@ -20,7 +20,7 @@ esac
 ZSH_THEME="agnoster"
 if [ "$machine" = 'Linux' ];
     then
-        DEFAULT_USER="Hannah";
+        DEFAULT_USER="hannah";
 	    PATH="~/bin:$PATH"
         alias update="sudo apt update && sudo apt upgrade"
         . /etc/zsh_command_not_found
