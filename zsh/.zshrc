@@ -23,6 +23,7 @@ if [ "$machine" = 'Linux' ];
         DEFAULT_USER="Hannah";
 	    PATH="~/bin:$PATH"
         alias update="sudo apt update && sudo apt upgrade"
+        . /etc/zsh_command_not_found
     else
         PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
         DEFAULT_USER="Manu";
@@ -117,7 +118,13 @@ alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
 alias vi='vim'
 alias nvim='vim'
 alias screenie="scrot '%Y-%m-%d_\$wx\$h_scrot.png' -e '~/bin/imgur \$f && mv \$f ~/images/shots/'"
+alias i='sudo apt -y install'
+alias apt-get='sudo apt'
+alias apt='sudo apt'
+alias xclip='xclip -selection primary'
+
 # Startup commands that have output
+
 neofetch --ascii
 
 #local special=$(cat ~/Downloads/special.txt)
