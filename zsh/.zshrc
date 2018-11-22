@@ -107,6 +107,10 @@ source $ZSH/oh-my-zsh.sh > /dev/null
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 fpath=(/usr/local/share/zsh-completions $fpath)
 eval "$(thefuck --alias fuck)"
 # add new dd
