@@ -22,7 +22,7 @@ if [ "$machine" = 'Linux' ];
     then
         DEFAULT_USER="hannah";
 	    PATH="~/bin:$PATH"
-        alias update="sudo apt update && sudo apt upgrade"
+        alias update="sudo apt update && sudo apt upgrade && sudo apt dist-upgrade"
         . /etc/zsh_command_not_found
     else
         PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -135,3 +135,4 @@ neofetch --ascii
 #local special_num = $special[$[${RANDOM}%${#special}]]
 
 alias cls=clear
+alias open-sesame='loginctl unlock-session 2'
